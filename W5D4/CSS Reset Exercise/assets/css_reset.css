@@ -1,0 +1,20 @@
+html, body, header, section, aside, h1, h2, p, li, footer, figure {
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+    font: inherit;
+    text-align: inherit;
+    text-decoration: inherit;
+    color: inherit;
+    background: transparent
+}
+
+body {
+  height: 1.5
+  text-docoration: none
+}
+
+img {
+  width: 100%
+}
