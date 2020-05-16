@@ -1,0 +1,51 @@
+<%if type == "edit"%>
+    <% action_url = cat_url(cat.id) %>
+<% else %>
+    <% action_url = cats_url %>
+<% end %>
+
+<form action="<%= action_url %>" method="POST">
+    <% if type == "edit" %>
+        <input type="hidden" name="_method" value="PATCH">
+    <% end %>
+    
+<label for="name">Name</label>
+<input id="name" type="text" name="cat[name]" value="<%=cat.name%>">
+<br>
+
+<p>Please select your cat's gender:</p>
+<input type="radio" <%= cat.sex == "M" ? "checked" : "" %> id="boy" name="cat[sex]" value="M">
+<label for="boy">Boy</label><br>
+<input type="radio" <%= cat.sex == "F" ? "checked" : "" %> id="girl" name="cat[sex]" value="F">
+<label for="girl">Girl</label><br>
+<br>
+
+<label for="color">Choose a color for your cat:</label>
+
+<label for="color"></label>
+<select name="cat[color]" id="color">
+    <option disabled <%= type == "new" ? "selected" : "" %>>Select the color</option>
+    <option value="white" <%= cat.color == "white" ? "selected" : "" %> >White</option>
+    <option value="black" <%= cat.color == "black" ? "selected" : "" %> >Black</option> 
+    <option value="brown" <%= cat.color == "brown" ? "selected" : "" %> >Brown</option>
+    <option value="calico" <%= cat.color == "calico" ? "selected" : "" %> >Calico</option>
+    <option value="hairless" <%= cat.color == "hairless" ? "selected" : "" %> >Hairless</option>
+    <option value="mixed" <%= cat.color == "mixed" ? "selected" : "" %> >Mixed</option>
+    <option value="orange" <%= cat.color == "orange" ? "selected" : "" %> >Orange</option>
+</select>
+
+<br>
+
+
+<label for="birth_date">Birth Date</label>
+<input id="birth_date" type="date" name="cat[birth_date]" value="<%=cat.birth_date%>">
+<br>
+<label for="description">Description</label>
+<textarea name="cat[description]" id="description" cols="30" rows="10">
+<%=cat.description%>
+</textarea>
+
+<br>
+<input type="submit" value="Adopt me!!">
+
+</form>
