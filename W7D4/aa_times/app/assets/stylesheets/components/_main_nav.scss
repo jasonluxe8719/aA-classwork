@@ -1,0 +1,44 @@
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.left-nav > ul,
+.right-nav > ul {
+    display: flex;
+    align-items: center;
+}
+
+.left-nav > ul > li {
+    font-family: Didot;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 2s;
+    margin: 5px;
+}
+
+.right-nav > ul > li {
+    font-family: Didot;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+.right-nav > ul > li:last-of-type {
+}
+
+.left-nav > ul > li:hover,
+.right-nav > ul > li:last-of-type:hover {
+    background-color: gray;
+}
+
+.left-nav span {
+    margin: 2px;
+}
+
+
+.right-nav i {
+    font-size: 20px;
+}
