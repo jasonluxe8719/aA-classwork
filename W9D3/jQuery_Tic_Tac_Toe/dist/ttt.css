@@ -1,0 +1,24 @@
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 312px;
+}
+
+li {
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    list-style: none;
+    background: gray;
+}
+
+li:hover {
+  background-color: yellow;
+
+}
+
+.mark {
+  font-size: 50px;
+  text-align: center;
+  background: white;
+}

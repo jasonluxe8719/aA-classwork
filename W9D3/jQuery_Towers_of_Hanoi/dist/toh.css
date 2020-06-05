@@ -1,0 +1,12 @@
+
+ul {
+  width: 315px;
+}
+
+li {
+  list-style: none;
+  width: 100px;
+  height: 100px;
+  background: red;
+  border: 2px solid black;
+}
