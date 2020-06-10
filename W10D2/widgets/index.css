@@ -1,0 +1,139 @@
+
+/* Reset */
+
+ul, li, div, span, h1, article, input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: sans-serif;
+    color: inherit;
+    list-style: none;
+    box-sizing: inherit;
+}
+
+/* App Styles */
+
+#root {
+  margin: 20px auto;
+  max-width: 720px;
+}
+
+.hgroup {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.tab, .autocomplete {
+  max-width: 300px;
+}
+
+/* Clock Styles */
+.clock {
+  font-family: 'Roboto';
+  padding: 20px;
+  background: yellow;
+  border: 2px solid black;
+  font-size: 2em;
+  
+}
+
+.clock div {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Tab Styles */
+.tab {
+  background: lightblue;
+}
+
+.tab ul {
+  display: flex;
+}
+
+.tab ul li {
+  flex-grow: 1;
+  border: 2px solid black;
+  border-left: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+}
+
+.tab ul li:first-child {
+  border-left: 2px solid black;
+}
+
+.tab ul li.selected {
+  border-bottom: none;
+}
+
+.tab ul li h1 {
+  text-align: center;
+}
+
+.tab ul li:hover {
+  background: black;
+  color: white;
+}
+
+.tab article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 300px;
+
+  color: white;
+
+  border: 2px solid black;
+  border-top: none;
+
+  font-size: 50px;
+}
+
+/* Weather Styles */
+.weather {
+  border: 2px solid black;
+  text-align: center;
+  background: lightgreen;
+  font-size: 50px;
+}
+
+.weather div {
+  margin: 10px;
+}
+
+/* Autocomplete Styles */
+
+.autocomplete {
+  background: pink;
+  border: 2px solid black;
+  padding: 10px;
+
+}
+
+.autocomplete input {
+  border-bottom: 1px solid black;
+
+}
+
+.autocomplete a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.autocomplete a:hover {
+  filter: brightness(80%);
+}
+
+.autocomplete li {
+  list-style: square;
+}
+
+.autocomplete ul {
+  padding-left: 10px;
+}
